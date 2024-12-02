@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="login.css" rel="stylesheet">
+    </style>
+    <style>
+        .card {
+            padding: 60px; /* Increase the padding inside the card */
+        }
+    </style>    
+</head>
+<body>
+    <form action="/signup" method="post">
+        <div class="card">
+            <h1 id="h1Head">Signup</h1>
+            <!-- Full Name Field -->
+            <div id="fullName">
+                <label for="fullname">Full Name:</label>
+                <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname" 
+                    placeholder="Enter Your Full Name" 
+                    required 
+                    aria-label="Full Name">
+            </div>
+            <!-- Username Field -->
+            <div id="username">
+                <label for="username">Username:</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    placeholder="Choose a Username" 
+                    required 
+                    aria-label="Username">
+            </div>
+            <!-- Email Field -->
+            <div id="email">
+                <label for="email">Email Address:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter Your Email Address" 
+                    required 
+                    aria-label="Email Address">
+            </div>
+            <!-- Phone Number Field -->
+            <div id="phoneNumber">
+                <label for="phone">Phone Number:</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="Enter Your Phone Number" 
+                    pattern="[0-9]{10}" 
+                    required 
+                    aria-label="Phone Number">
+            </div>
+            <!-- Password Field -->
+            <div id="passwordField">
+                <label for="password">Password:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Create a Password" 
+                    required 
+                    aria-label="Password">
+            </div>
+            <!-- Confirm Password Field -->
+            <div id="confirmPassword">
+                <label for="confirm_password">Confirm Password:</label>
+                <input 
+                    type="password" 
+                    id="confirm_password" 
+                    name="confirm_password" 
+                    placeholder="Re-enter Your Password" 
+                    required 
+                    aria-label="Confirm Password">
+            </div>
+            <!-- Submit Button -->
+            <div id="submitBtn">
+                <button type="submit">Sign Up</button>
+            </div>
+            <!-- Login Link -->
+            <div>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
